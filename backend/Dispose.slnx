@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Dispose.Api.Tests/Dispose.Api.Tests.csproj" />
+  <Project Path="Dispose.Api/Dispose.Api.csproj" />
+</Solution>
