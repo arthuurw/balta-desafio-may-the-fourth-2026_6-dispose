@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f1512;
+  --color-surface: #161d19;
+  --color-surface-dim: #0f1512;
+  --color-surface-bright: #2a3530;
+  --color-surface-low: #171e1a;
+  --color-surface-container: #1c2420;
+  --color-surface-high: #262e29;
+  --color-surface-highest: #313a35;
+  --color-on-surface: #dde4de;
+  --color-on-surface-variant: #bdc9be;
+  --color-outline: #87938a;
+  --color-outline-variant: #3d4a42;
+  --color-primary: #72be8a;
+  --color-on-primary: #003919;
+  --color-primary-container: #00522a;
+  --color-on-primary-container: #4da873;
+  --color-secondary: #5bb8d4;
+  --color-on-secondary: #003543;
+  --color-secondary-container: #004d60;
+  --color-on-secondary-container: #4aa8c4;
+  --color-tertiary: #f4a942;
+  --color-on-tertiary: #3e2200;
+  --color-tertiary-container: #5a3300;
+  --color-on-tertiary-container: #dc9530;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-waste-organic: #72be8a;
+  --color-waste-recycle: #5bb8d4;
+  --color-waste-glass: #9b8ddb;
+  --color-waste-special: #f4a942;
+  --color-waste-pruning: #a0845a;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --radius-card: 8px;
+  --radius-pill: 9999px;
+  --radius-btn: 6px;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}

@@ -1,158 +1,210 @@
 ---
-name: Cosmic Culinary Interface
+name: Dispose — Design System
 colors:
-  surface: '#121315'
-  surface-dim: '#121315'
-  surface-bright: '#38393b'
-  surface-container-lowest: '#0d0e10'
-  surface-container-low: '#1a1c1e'
-  surface-container: '#1f2022'
-  surface-container-high: '#292a2c'
-  surface-container-highest: '#343537'
-  on-surface: '#e3e2e4'
-  on-surface-variant: '#c3c6ce'
-  inverse-surface: '#e3e2e4'
-  inverse-on-surface: '#2f3032'
-  outline: '#8d9198'
-  outline-variant: '#43474d'
-  surface-tint: '#b0c9ea'
-  primary: '#b0c9ea'
-  on-primary: '#18324c'
-  primary-container: '#0f2a44'
-  on-primary-container: '#7992b1'
-  inverse-primary: '#48607d'
-  secondary: '#dac49c'
-  on-secondary: '#3c2e12'
-  secondary-container: '#544526'
-  on-secondary-container: '#c8b38b'
-  tertiary: '#84dd15'
-  on-tertiary: '#1c3700'
-  tertiary-container: '#172e00'
-  on-tertiary-container: '#5da000'
+  background: '#0f1512'
+  surface: '#161d19'
+  surface-dim: '#0f1512'
+  surface-bright: '#2a3530'
+  surface-container-lowest: '#0a0f0d'
+  surface-container-low: '#171e1a'
+  surface-container: '#1c2420'
+  surface-container-high: '#262e29'
+  surface-container-highest: '#313a35'
+  on-surface: '#dde4de'
+  on-surface-variant: '#bdc9be'
+  outline: '#87938a'
+  outline-variant: '#3d4a42'
+  primary: '#72be8a'
+  on-primary: '#003919'
+  primary-container: '#00522a'
+  on-primary-container: '#4da873'
+  secondary: '#5bb8d4'
+  on-secondary: '#003543'
+  secondary-container: '#004d60'
+  on-secondary-container: '#4aa8c4'
+  tertiary: '#f4a942'
+  on-tertiary: '#3e2200'
+  tertiary-container: '#5a3300'
+  on-tertiary-container: '#dc9530'
   error: '#ffb4ab'
   on-error: '#690005'
   error-container: '#93000a'
   on-error-container: '#ffdad6'
-  primary-fixed: '#d1e4ff'
-  primary-fixed-dim: '#b0c9ea'
-  on-primary-fixed: '#001d36'
-  on-primary-fixed-variant: '#304864'
-  secondary-fixed: '#f7e0b6'
-  secondary-fixed-dim: '#dac49c'
-  on-secondary-fixed: '#251a02'
-  on-secondary-fixed-variant: '#544526'
-  tertiary-fixed: '#9ffa3a'
-  tertiary-fixed-dim: '#84dd15'
-  on-tertiary-fixed: '#0e2000'
-  on-tertiary-fixed-variant: '#2c5000'
-  background: '#121315'
-  on-background: '#e3e2e4'
-  surface-variant: '#343537'
+  waste-organic: '#72be8a'
+  waste-recycle: '#5bb8d4'
+  waste-glass: '#9b8ddb'
+  waste-special: '#f4a942'
+  waste-pruning: '#a0845a'
 typography:
   h1:
-    fontFamily: Space Grotesk
-    fontSize: 48px
-    fontWeight: '700'
-    lineHeight: '1.1'
-    letterSpacing: 0.05em
-  h2:
-    fontFamily: Space Grotesk
+    fontFamily: Inter
     fontSize: 32px
-    fontWeight: '600'
-    lineHeight: '1.2'
-    letterSpacing: 0.03em
-  h3:
-    fontFamily: Space Grotesk
+    fontWeight: '700'
+    lineHeight: '1.15'
+    letterSpacing: '-0.02em'
+  h2:
+    fontFamily: Inter
     fontSize: 24px
     fontWeight: '600'
     lineHeight: '1.2'
-    letterSpacing: 0.02em
-  body-lg:
-    fontFamily: Manrope
+    letterSpacing: '-0.01em'
+  h3:
+    fontFamily: Inter
     fontSize: 18px
-    fontWeight: '400'
-    lineHeight: '1.6'
-    letterSpacing: 0px
-  body-md:
-    fontFamily: Manrope
+    fontWeight: '600'
+    lineHeight: '1.3'
+    letterSpacing: '0'
+  body-lg:
+    fontFamily: Inter
     fontSize: 16px
     fontWeight: '400'
+    lineHeight: '1.6'
+    letterSpacing: '0'
+  body-sm:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
     lineHeight: '1.5'
-    letterSpacing: 0px
-  label-caps:
-    fontFamily: Space Grotesk
+    letterSpacing: '0'
+  label:
+    fontFamily: Inter
     fontSize: 12px
-    fontWeight: '700'
+    fontWeight: '600'
     lineHeight: '1.0'
-    letterSpacing: 0.15em
-  stats-num:
-    fontFamily: Space Grotesk
-    fontSize: 20px
-    fontWeight: '500'
-    lineHeight: '1.0'
-    letterSpacing: 0.02em
+    letterSpacing: '0.08em'
+  mono:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: '1.5'
 spacing:
   base: 8px
   xs: 4px
   sm: 12px
-  md: 24px
-  lg: 48px
-  xl: 64px
-  panel-gap: 2px
+  md: 16px
+  lg: 24px
+  xl: 40px
+  2xl: 64px
 ---
 
 ## Brand & Style
 
-This design system establishes a "NASA-punk" aesthetic—a fusion of high-precision aerospace technology and approachable culinary planning. The personality is authoritative and technical yet infused with the wonder of space exploration. It prioritizes a high-utility, cockpit-like experience where meal preparation is treated as mission-critical data.
+Dispose uses a **Clean Urban Eco** aesthetic — functional, legible, and grounded. The personality is civic and trustworthy, like a well-designed public service app. It avoids greenwashing clichés; the visual language is precise and data-forward, not decorative.
 
-The visual style utilizes a **Tactile Sci-Fi** approach. It combines sharp, angular "tech panels" for structural data with soft, badge-like circular elements for celebratory actions and status indicators. The interface features isometric vector illustrations with medium-weight strokes and subtle grain textures to provide a physical, "lived-in" feel to the digital environment.
+The dominant dark-green surface palette evokes urban parks and recycling infrastructure. Color is used semantically: each waste type has a dedicated accent so users can scan schedules at a glance without reading labels.
 
 ## Colors
 
-The palette is anchored by deep galactic blues, providing a high-contrast foundation for technical data. **Space Blue** serves as the primary atmospheric layer, while **Deep Dark Blue** creates depth in recessed containers and shadows. 
+Base surfaces use deep forest-green-tinted darks. Primary green (`#72be8a`) anchors interactive elements. Waste types each get a fixed semantic color:
 
-**Gold/Beige** is the primary functional color, used for structural borders and high-priority typography to evoke vintage star charts. **Tech Red** is reserved for critical actions and navigational alerts, while **Neon Green** signifies "Energy" and successful status updates. **Soft White** is used sparingly for highlights and simulated stellar backgrounds.
+| Type | Color | Hex |
+|---|---|---|
+| Orgânico | Green | `#72be8a` |
+| Reciclável | Cyan | `#5bb8d4` |
+| Vidro | Violet | `#9b8ddb` |
+| Especial (pilhas/eletrônicos) | Amber | `#f4a942` |
+| Poda/Entulho | Brown | `#a0845a` |
+
+These colors must remain consistent across schedule cards, badges, map pins, and reminder chips. Never reuse them for other UI purposes.
 
 ## Typography
 
-This design system uses a dual-font strategy to balance technical precision with readability. **Space Grotesk** is used for all headers, labels, and numeric data; it should always be set with open tracking (letter-spacing) to mimic radar readouts and aerospace HUDs. Headers should be primarily all-caps.
+Single font family: **Inter** for all UI. **JetBrains Mono** only for: session IDs, coordinates, API responses in developer views.
 
-**Manrope** serves as the secondary typeface for body copy and long-form recipe instructions. It provides a humanistic touch that balances the rigid geometry of the headers, ensuring that complex ingredient lists and preparation steps remain legible during high-activity kitchen tasks.
+Headers use tight negative tracking. Body copy uses standard tracking. Labels use wide positive tracking (uppercase). No decorative display fonts.
 
-## Layout & Spacing
+## Layout
 
-The layout follows a **Fixed Tech-Grid** philosophy. Primary content is housed within rigid, structural panels that resemble modular spaceship components. A strict 8px rhythm governs all internal padding.
+Three-column dashboard on desktop (≥1024px):
+- Left (240px): navigation + active reminders
+- Center (flexible): main content area (schedule, chat, points)
+- Right (320px): context panel (today's collection, nearby points)
 
-Layouts should favor a "Dashboard" view rather than a scrolling feed. Content blocks are separated by narrow 2px "panel gaps" that reveal the underlying starry background, creating the illusion of a floating interface. Use isometric perspectives for featured meal cards to break the 2D plane and add a sense of physical hardware.
+Two-column on tablet (≥768px): nav collapses to top bar, context panel becomes drawer.
 
-## Elevation & Depth
+Single column on mobile: bottom navigation bar, drawer for filters.
 
-Hierarchy is established through **Tonal Layers** and **Bold Outlines** rather than traditional shadows. 
-- **Level 0 (Background):** The primary Space Blue gradient with a subtle grain texture and sparse "star" particles.
-- **Level 1 (Panels):** Deep Dark Blue surfaces with 1px solid Gold/Beige borders.
-- **Level 2 (HUD Overlays):** Semi-transparent (80% opacity) versions of Space Blue with frosted glass blurs and Neon Green accents to indicate active selection.
-- **Level 3 (Interaction):** Elements "pop" using Tech Red or Neon Green glows (outer-glow effects) instead of drop shadows to simulate illuminated controls.
+Spacing rhythm: strict 8px grid. Card padding: 16px. Section gaps: 24px. Page margins: 24px desktop, 16px mobile.
+
+## Waste Type Cards (Schedule)
+
+Each card represents one waste type for a neighborhood:
+- Left accent border (4px) in the waste-type color
+- Icon (32px, waste type specific) + type label
+- Collection days as pills: one pill per day, filled with waste-type color at 20% opacity, text at 100%
+- Time slot in `label` typography style
+- Next collection date prominently displayed — bold, waste-type color
+- Notes in `body-sm`, muted
+
+Never mix waste types within a single card.
+
+## Collection Point Cards
+
+- Distance badge top-right (amber if >1km, green if ≤1km)
+- Name in `h3`, address in `body-sm` muted
+- Accepted types as small chips using each type's semantic color
+- Opening hours in `mono` style
+- "Criar lembrete" action button — secondary style, right-aligned
+
+## Reminders
+
+Reminders use a chip/tag pattern:
+- Left icon: waste type icon in semantic color
+- Item description truncated to 1 line
+- Point name in muted text below
+- Status indicator: amber dot (pendente) / green checkmark (concluído)
+- "Concluído" action: swipe on mobile, button hover on desktop
+
+## Chat Interface
+
+Terminal-inspired but readable:
+- User messages: right-aligned, `surface-container-high` background, no border
+- Agent messages: left-aligned, `surface-container` background, left border 2px `primary`
+- Agent suggestions (point, reminder) render as inline cards inside the message bubble
+- Input bar: full width, `surface-container-lowest` background, `primary` focus ring
+- Geolocation status indicator top-right of input: green dot (active) / amber dot (no GPS)
+
+## Elevation
+
+No traditional shadows. Hierarchy via tonal layers:
+- Background `#0f1512`
+- Cards / panels: `surface-container` `#1c2420`
+- Input fields: `surface-container-lowest` `#0a0f0d`
+- Hover states: `surface-container-high` `#262e29`
+- Active/selected: `primary-container` `#00522a`
 
 ## Shapes
 
-This design system utilizes a contrast of "Hard Tech" and "Organic Badge" shapes. 
-- **Panels & Containers:** Use sharp, 0px corners. For primary navigation containers, apply a 45-degree "chamfer" or "clipped corner" effect (12px) to the top-right and bottom-left corners.
-- **Badges & Status Icons:** Use pill-shaped or circular radii to differentiate them from the structural UI. 
-- **Illustrations:** Characters and food items should feature medium-weight outlines and wavy, badge-style container frames to maintain the "cartoon-tech" charm.
+- Cards: 8px radius
+- Badges / chips: 999px (pill)
+- Buttons: 6px radius
+- Input fields: 6px radius
+- Map pins: circular (20px diameter)
+- No chamfers, no sharp 0px corners in interactive elements
 
-## Components
+## Buttons
 
-### Buttons
-Primary actions use **Tech Red** with sharp corners and all-caps **Space Grotesk** text. Secondary actions use the **Gold/Beige** border-only "ghost" style. All buttons should have a subtle inner-glow on hover.
+- **Primary**: `primary` background, `on-primary` text, 6px radius, 12px horizontal padding
+- **Secondary**: `outline-variant` border, transparent background, `on-surface` text
+- **Ghost**: transparent, `on-surface-variant` text, underline on hover
+- **Danger**: `error-container` background, `on-error-container` text
 
-### Badges & Chips
-Status indicators (e.g., "High Protein," "Fuel Low") are rendered as circular or wavy-bordered badges. Use **Neon Green** for positive energy states and **Tech Red** for depletion or warnings.
+Disabled state: 40% opacity, `not-allowed` cursor.
 
-### Data Panels (Cards)
-Meal cards must be isometric. They feature a 1px Gold border and a header strip in a darker shade of Blue. Key metrics (Calories, Prep Time) should be displayed in the **Label-Caps** typography style at the bottom of the card.
+## Icons
 
-### Input Fields
-Inputs are recessed containers using the **Deep Dark Blue** color. The cursor and focus state should utilize a "blinking" Neon Green block to reinforce the retro-tech terminal aesthetic.
+Use a single icon set (Lucide or Phosphor). Waste type icons:
+- Orgânico: leaf
+- Reciclável: recycle arrows
+- Vidro: wine-glass
+- Especial: zap (pilhas/eletrônicos) / pill (medicamentos) / droplets (óleo)
+- Poda: tree
 
-### Progress Bars
-Energy and nutrient tracking use segmented bars (divided into blocks) rather than continuous fills, evoking 8-bit power meters.
+Icons always paired with text labels — never icon-only except in map pins.
+
+## Accessibility
+
+- All interactive elements: minimum 44×44px touch target
+- Color never sole indicator of meaning — always paired with icon or text
+- Focus rings: 2px solid `primary`, 2px offset
+- Minimum contrast 4.5:1 for body text, 3:1 for large text / UI components
